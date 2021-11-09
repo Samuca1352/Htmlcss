@@ -1,11 +1,112 @@
 
-    @media only screen and (max-width: 800px) {
+   @font-face {
+       font-family: Calp;
+       src: url(fonts/CalpsSans-SemiLight.ttf);
+   }
+   
+   @font-face {
+    font-family: Cooper;
+    src: url(fonts/CooperHewitt-Book.otf);
+}
+   
+   
+   @media only screen and (max-width: 800px) {
        
 #logo{
     height: 150px;
 
 }
 
+.container{
+    width: 105%;
+    display: flex;
+    justify-content: center;
+    margin-left: -8;
+    margin-top: 6vh;
+    flex-direction: column;
+    padding: 0;
+
+}
+
+.area{
+    margin: 0 auto;
+    margin-top: 5vh;
+    width: 100%;
+    text-align: center;
+    background-color:#fdfdfd ;
+    height: 7vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+   font-size: 180%;
+    font-family: Calp;
+    box-shadow: inset 0 0 5px gray;
+
+}
+
+.container img{
+    width: 35%;
+    height: auto;
+    margin: 0 auto;
+
+}
+
+#divBusca{
+    background-color:white;
+    border:solid 1px gray;
+    border-radius:5px;
+    width:300px;
+    margin: 0 auto;
+    margin-top: 2vh;
+    padding: 3;
+  }
+  
+#divbusca img{
+   height: 30px;
+   width: auto;
+}
+
+  #txtBusca{
+    float:left;
+    background-color:transparent;
+    padding-left:5px;
+    font-size:18px;
+    border:none;
+    height:32px;
+    width:260px;
+  }
+
+
+.table{
+    width: 100%;
+}
+.refletir{
+    transform: rotateX(180deg);
+ }
+
+thead{
+    visibility:hidden;
+}
+
+.table td{
+    background-color:white;
+    border: solid 1px;
+    border-radius: 3px;
+    text-align: center;
+    font-family: Cooper;
+    font-size: 14px;
+    min-width: 30px;
+}
+
+.informacoes{     transition: top 1s ease-out;
+    opacity: 0; 
+    height: 0;
+    overflow: hidden;}
+
+    .informacoes.active{
+        opacity: 1;
+    height: auto;
+    }
 .conteudo{
     display: flex;
     flex-direction: column;
@@ -29,7 +130,15 @@
     height: 60px;
     width: 60%;
     font-family:monospace;
-    font-size: 170%;
+    font-size: 140%;
+    
+   
+}
+
+.produtos a{
+    color:black;
+    text-decoration: none;
+    
 }
 
 .vendas{
@@ -56,7 +165,7 @@ h2{
     margin-right: auto;
 }
 
-input{
+.conteudo input{
 
     display: block;
     width: 100%;
@@ -86,7 +195,23 @@ label{
     font-style: monospace;
 }
 
-button{
+.botoes button{
+    background-color: #002b0e;
+    color: white;
+   font-size: 18;
+    border-radius: 2px;
+    border:none;
+    padding: 5px;
+}
+
+.botoes{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    height:5vh;
+}
+
+.conteudo button{
     margin-top: 10px;
     border:#16863a solid 1px;
     background-color: #faf60c;
@@ -135,6 +260,12 @@ body{
     align-items: center;
 
   
+}
+
+.produtos a{
+    color:black;
+    text-decoration: none;
+    
 }
 
 
